@@ -3,7 +3,7 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "sid"
+name:               "~"
 
 author:
   twitter:          sofasogo0d
@@ -46,8 +46,8 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
-  - name:           "Archive"
-    url:            "/archive"
+#  - name:           "Archive"
+#     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
