@@ -1,7 +1,6 @@
 ---
 title: Smells
 date: 2020-11-13 03:26:00 Z
-Ideas: 
 ---
 
 Develop an app where we connect people (dating) (networking) who like similar smells
