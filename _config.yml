@@ -1,83 +1,58 @@
-# # # # # # # # # # # # #
-#   K i k o - p l u s   #
-# # # # # # # # # # # # #
-
-# Basic
-name:               "~"
-
-author:
-  twitter:          sofasogo0d
-  github:           siddhartpai
-  stackoverflow:    1220620
-  email:            your-id@your-email.com
-
-copyright:
-  year:             2017
-  name:             Siddharth
-
-# Google-analytics
-google-analytics:
-  id:               "UA-179989149-1"
-
-# Disqus
-disqus:
-  id:               "siddhartpai"
-
-# URL
-url:                "https://siddhartpai.github.io/pai.fyi" # the base hostname & protocol for your site
-#url:                "http://localhost:4000" # use this url when you develop
-#url:                "https://siddhartpai.github.io/pai.fyi" # the base hostname & protocol for your site
-baseurl:            "/" # the subpath of your site, e.g. /blog
-
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Kolkata
-permalink:          /:year-:month-:day/:title/
-
-# Pagination
-paginate:           5
-paginate_path:      /page:num/
-
-# Markdown
-markdown:           kramdown
-kramdown:
-  input:            GFM
-
-# Navigation
-nav:
-  - name:           "About"
-    url:            "/about"
-#  - name:           "Archive"
-#     url:            "/archive"
-  - name:           "Tags"
-    url:            "/tags"
-  - name:           "Github"
-    url:            "https://github.com/siddhartpai"
-
-# Sass
-sass:
-  sass_dir:         _sass
-  style:            :compressed
-
-# Scopes
+---
+title: Pai.Fyi
+timezone: Asia/Kolkata
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-
-# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+name: "~"
+author:
+  twitter: sofasogo0d
+  github: siddhartpai
+  stackoverflow: 1220620
+  email: your-id@your-email.com
+copyright:
+  year: 2017
+  name: Siddharth
+google-analytics:
+  id: UA-179989149-1
+disqus:
+  id: siddhartpai
+url: https://siddhartpai.github.io/pai.fyi
+baseurl: "/"
+permalink: "/:year-:month-:day/:title/"
+paginate: 5
+paginate_path: "/page:num/"
+markdown: kramdown
+kramdown:
+  input: GFM
+nav:
+- name: About
+  url: "/about"
+- name: Tags
+  url: "/tags"
+- name: Github
+  url: https://github.com/siddhartpai
+sass:
+  sass_dir: _sass
+  style: :compressed
 gems:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-admin
-
-exclude:            [vendor]
+- jekyll-seo-tag
+- jekyll-paginate
+- jekyll-admin
+exclude:
+- vendor
