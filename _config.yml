@@ -2,6 +2,9 @@
 title: Pai.Fyi
 timezone: Asia/Kolkata
 collections:
+  ideas:
+    title: Ideas
+    output: true
   posts:
     title: Posts
     output: true
